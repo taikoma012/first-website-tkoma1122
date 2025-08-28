@@ -4,9 +4,11 @@
     <meta charset="UTF-8">
     <title>Hello World Website</title>
     <script>
-        function function-name() {
+        function ChangeName() {
             // >>> put a prompt here, ask the user for a new name <<< 
+            let NewName = prompt("Enter your name: ");
             // Use document.getElementById("your id").textContent = .... to change the level 1 header to say something new
+            document.getElementById("your ID").textContent = "Hello, " + NewName + "!";
         }
     </script>
 </head>
