@@ -8,12 +8,20 @@
             // >>> put a prompt here, ask the user for a new name <<< 
             let NewName = prompt("Enter your name: ");
             // Use document.getElementById("your id").textContent = .... to change the level 1 header to say something new
-            document.getElementById("your ID").textContent = "Hello, " + NewName + "!";
+            document.getElementById("greeting-header").textContent = "Hello, " + NewName + "!";
+        }
+
+        function ChangeColor() {
+            let Colors = ['red', 'blue', 'yellow', 'green', 'pink'];
+            let randomColor = Colors[Math.floor(Math.random() * Colors.length)];
+            document.getElementById("greeting-header").style.color = randomColor;
+
         }
     </script>
 </head>
 <body>
-    <h1 id="your-id-here">Hello, World!</h1>
-    <button onclick="function-name()">label-on-button</button>
+    <h1 id="greeting-header">Hello, World!</h1>
+    <button onclick="ChangeName()">Change name</button>
+    <button onclick="ChangeColor()">Change color</button>
 </body>
 </html>
